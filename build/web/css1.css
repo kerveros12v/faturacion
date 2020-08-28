@@ -1,0 +1,420 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17 jul. 2020, 20:52:36
+    Author     : dellubuntu
+*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+   
+}
+
+th{
+    border-bottom: black;
+    border-bottom-style: solid;
+    background-color: dodgerblue;
+}
+
+label.th2{
+    
+    color: white;
+    
+    font-size: 40px;
+    font-style: oblique;
+}
+input[type=text].camtext{
+    width: 600px;
+}
+input[type=text].camnum{
+    width: 180px;
+}
+tbody.contenedorproductos{
+    border: 1px solid;
+    width: 50%;
+    height: 50%;
+}
+input[type=submit].btndoble:focus{
+    height: 40px;
+    text-decoration: none;
+    /*
+    padding: 5px;
+    */
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+    background-color: rgb(45, 18, 202);
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+input[type=submit].btndoble{
+    height: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    width: 98%;
+    display: block;
+}
+h1{
+    
+    color: white;
+   
+}
+div.contenedorg1 {
+    /*
+    display: flex;
+    top: 10%;
+    bottom: 10%;
+    left: 10%;
+    right: 50%;
+    border-color: #848484;
+    */
+    display: inline-block;
+    top: 25%;
+    bottom: 10%;
+    right: 50%;
+
+}
+div.contenedorg{
+    display: flex;
+    top: 10%;
+    bottom: 10%;
+    left: 10%;
+    right: 50%;
+    border-color: #848484;
+    justify-content: center;
+    display: flex;
+
+    align-items: center;
+
+}
+tr.linea{
+
+    color: white;
+
+}
+
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: #0f2027; 
+    background: linear-gradient(to right,#2c5364, #203a43, #0f2027);
+
+    height: 100vh;
+    color: #fff;
+
+}
+
+.form__label {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+    transform: translateY(0rem);
+}
+
+.form__input {
+
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    /*
+    padding: 1.5rem 2rem;
+    */
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 90%;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+}
+
+
+.form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(-4rem);
+    transform: translateY(-4rem);
+}
+div.login{
+    /*
+    background: #eceeee;
+    */
+    padding-top: 20px;
+    border: 1px solid white;
+    border-radius: 6px;
+    height: 217px;
+    margin: 20px auto 0;
+    width: 298px;
+}
+td.linea{
+    display: inline-flex;
+    text-align: center;
+}
+.sidebar1 {
+    float: left;
+    width: 100%;
+    background-color: #848484;
+    align-items: center;
+    
+    padding-bottom: 4px;
+   
+    color: white;
+    display: inline-flex;
+}
+
+ul, ol {
+    list-style:none;
+}
+#nav{
+    width: 70%;
+}
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    background-color:#848484;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+    font-size: 15pt;
+
+}
+
+.nav li a:hover {
+    background-color:crimson;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+    color: white;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+
+}
+
+.nav-derecho > li {
+    float:left;
+}
+
+.nav-derecho li a {
+    background-color: #848484;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+    font-size: 10pt;
+    align-items: flex-end;
+
+}
+
+.nav-derecho li a:hover {
+    background-color:crimson;
+}
+
+.nav-derecho li ul {
+    display:none;
+    position:absolute;
+    min-width:200px;
+    color: white;
+}
+
+.nav-derecho li:hover > ul {
+    display:block;
+}
+
+.nav-derecho li ul li {
+    position:relative;
+}
+
+.nav-derecho li ul li ul {
+    right:-200px;
+    top:0px;
+
+}
+.content {
+    padding: 10px 0;
+    width: 100%;
+    float: left;
+}
+
+/* ~~ Este selector agrupado da espacio a las listas del área de .content ~~ */
+.content ul, .content ol {
+    padding: 0 15px 15px 40px; /* este relleno reproduce en espejo el relleno derecho de la regla de encabezados y de párrafo incluida más arriba. El relleno se ha colocado en la parte inferior para que el espacio existente entre otros elementos de la lista y a la izquierda cree la sangría. Estos pueden ajustarse como se desee. */
+}
+div.bloque{
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    display: block;
+}
+input[type="text"].datos {
+   /*
+   margin: 40px 25px;
+   */
+   width: 200px;
+    display: block;
+    border: none;
+    border-bottom: white solid;
+    padding: 10px 0;
+    border-bottom: solid 1px $color;
+    transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, #1abc9c 4%);
+    background-position: -200px 0;
+    background-size: 200px 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    &:focus, &:valid {
+        box-shadow: none;
+        outline: none;
+        background-position: 0 0;
+        &::-webkit-input-placeholder {
+            color: #1abc9c;
+            font-size: 11px;
+            transform: translateY(-20px);
+            visibility: visible !important;
+        }
+    }
+}
+label.etiqueta1{
+    font-size: 10px;
+}
+div.datosclientes{
+    /*
+    border: 1px solid;
+    */
+    text-align: center;
+    display: inline-flex;
+}
+input[type=image].btnimg{
+    width:300px ;
+    height:300px;
+}
+div.form__group{
+    border: 1px solid;
+    border-radius: 40px;
+    padding: 5px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 80%, #1abc9c 20%);
+}
+
+input[type=radio].ocultar{
+    display: none;
+    opacity: 0;
+}
+table.centrar{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+td.centrar{
+    padding: 15px;
+}
+div.seccion{
+    background-color: cadetblue;
+    opacity: 90;
+}
+input[type=image].btnico{
+    width:30px ;
+    height:30px;
+    
+}
+
+label.enlinea{
+    /*
+    border: 1px solid;
+    */
+    text-align: center;
+    display: inline-flex;
+}
+div.linebaja{
+    border-bottom: 1px solid ;
+}
+div.lineaslaterales{
+    border-left: 1px solid ;
+    border-right: 1px solid ;
+}
+/* Create three equal columns that floats next to each other */
+div.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+div.row {
+align-items: center;
+ 
+}
+button.btnimg {
+    width:250px ;
+    height:250px;
+  
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 80%, #1abc9c 20%);
+  
+  border-radius: 50px;
+}
+button.btnico {
+    width:30px ;
+    height:30px;
+  
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 80%, #1abc9c 20%);
+  
+  border-radius: 50px;
+}
+img.btnimg{
+    
+    width:250px ;
+    height:250px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 80%, #1abc9c 20%);
+    border-radius: 50px;
+}
+img.btnimg:hover{
+    
+    width:250px ;
+    height:250px;
+   /*
+   background: linear-gradient(to bottom, rgba(255,255,255,0) 80%, #1abc9c 20%);
+   */
+   border-radius: 50px;
+}
+img.btnico{
+    width:30px ;
+    height:30px;
+   /*
+   image-resolution: 30px;
+   */
+}
+tr.fondos{
+    background: #1abc9c;
+}
